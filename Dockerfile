@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Luke Campbell <luke.campbell@rpsgroup.com>
+MAINTAINER Luke Campbell <Robert.Fratantonio@rpsgroup.com>
 
 ENV NODE_VERSION 7.9.0
 ENV GOSU_VERSION 1.9
@@ -12,14 +12,14 @@ COPY contrib/scripts/ $SCRIPTS_DIR/
 
 RUN $SCRIPTS_DIR/install-deps.sh
 RUN $SCRIPTS_DIR/install-node.sh
-COPY bin /opt/gliders/bin
-COPY public /opt/gliders/public
-COPY routes /opt/gliders/routes
-COPY views /opt/gliders/views
-COPY .bowerrc app.js bower.json package.json /opt/gliders/
+COPY bin /opt/ocean-acidification/bin
+COPY public /opt/ocean-acidification/public
+COPY routes /opt/ocean-acidification/routes
+COPY views /opt/ocean-acidification/views
+COPY .bowerrc app.js bower.json package.json /opt/ocean-acidification/
 
-WORKDIR /opt/gliders
-RUN chown -R node:node /opt/gliders
+WORKDIR /opt/ocean-acidification
+RUN chown -R node:node /opt/ocean-acidification
 USER node
 RUN npm install && \
     node_modules/bower/bin/bower install

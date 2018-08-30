@@ -1,11 +1,11 @@
 {
-  "name": "gliders",
+  "name": "ocean-acidification",
   "version": "0.0.1",
-  "homepage": "https://github.com/ioos/gliders",
+  "homepage": "https://github.com/ioos/ocean-acidification",
   "authors": [
-    "Luke Campbell <luke.s.campbell@gmail.com>"
+    "Robert Fratantonio <Robert.Fratantonio@rpsgroup.com>"
   ],
-  "description": "Gliders Homepage",
+  "description": "Ocean Acidification Homepage",
   "main": "",
   "moduleType": [],
   "license": "MIT",

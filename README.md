@@ -1,5 +1,5 @@
 # HF Radar DAC
-The front page / home page for IOOS HF-Radar DAC
+The front page / home page for IOOS Ocean Acidification
 
 
 # Installation
