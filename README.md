@@ -35,3 +35,12 @@ The front page / home page for IOOS Ocean Acidification
 
 Most of this project are static files. The initial pages are loaded as jade
 templates.  
+
+# Sample Docker-compose file:
+version: '2'
+
+services:
+  ioos-ocean-acidification:
+    image: ocean-acidificationtest:0.0.1
+    ports:
+      - "3007:3000"
