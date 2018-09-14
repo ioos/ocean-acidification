@@ -44,3 +44,10 @@ services:
     image: ocean-acidificationtest:0.0.1
     ports:
       - "3007:3000"
+
+# Update the .env file with config variables
+For testing Google Analytics and things that use env variables.
+Update the .env file in your root folder similar to this:
+```
+GOOGLE_ANALYTICS_ID=YOUR_ENV_VAR_HERE
+```
