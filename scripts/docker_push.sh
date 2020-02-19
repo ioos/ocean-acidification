@@ -16,6 +16,6 @@ else
   image_release_tag="${TRAVIS_TAG:-latest}"
 
   echo "Tagging image with: $image_release_tag"
-  docker tag "ocean-acidification:latest" "ioos/ocean-acidification:$image_release_tag"
-  docker push "ioos/ocean-acidification:$image_relase_tag"
+  docker tag ocean-acidification:latest ioos/ocean-acidification:$image_release_tag
+  docker push ioos/ocean-acidification
 fi
