@@ -14,7 +14,7 @@ jobs:
 install:
 - docker build -t ocean-acidification . --no-cache
 script:
-- docker run -d -p 3000:3000 osmc
+- docker run -d -p 3000:3000 ocean-acidifcation
 deploy:
   provider: script
   script: bash "$TRAVIS_BUILD_DIR/scripts/docker_push.sh"
