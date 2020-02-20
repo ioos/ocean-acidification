@@ -4,26 +4,20 @@ The front page / home page for IOOS Ocean Acidification
 
 # Installation
 
-1. Download and install nodeJS (should come with npm)
-2. Install bower
-   
-   ```
-   npm install -g bower
-   ```
+0. Download and install nodeJS (should come with npm)
+0. Install `yarn` using your package manager. Instructions can be found [here](https://legacy.yarnpkg.com/en/docs/install/).
 
-   _You may need to run as sudo_
+0. Use `yarn` to install the package and its dependencies:
 
-3. Use node to build the project dependencies
+```
+$ yarn
+```
 
-   ```
-   npm install
-   ```
+0. Run the project
 
-4. Use bower to install the UI depencies
-
-   ```
-   bower install
-   ```
+    ```
+    node bin/www
+    ```
 
 5. Run the project
 
@@ -35,6 +29,16 @@ The front page / home page for IOOS Ocean Acidification
 
 Most of this project are static files. The initial pages are loaded as jade
 templates.  
+
+# Docker build
+
+```
+$ docker build -t <tag> -f Dockerfile .
+```
+
+__NOTE__: ensure that `public/lib` is removed *before* building. If it exists,
+`yarn` will attempt to use the existing one in the Docker build, breaking the symlink
+in the container and lead to ugly CSS.
 
 # Sample Docker-compose file:
 version: '2'
