@@ -21,3 +21,4 @@ deploy:
   on:
     repo: ioos/ocean-acidification
     branch: master
+    tags: true
